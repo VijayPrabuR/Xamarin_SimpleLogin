@@ -1,5 +1,4 @@
 # Xamarin_SimpleLogin
-# Xamarin_SimpleLogin
 This app shows a demo for user login with backend database<br/><br/>
 Additional modules: 
 <ol type="1">
