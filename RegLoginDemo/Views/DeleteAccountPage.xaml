@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RegLoginDemo.Views.DeleteAccountPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <AbsoluteLayout>
+                    <Image Source="deletelogo" HorizontalOptions="Center" AbsoluteLayout.LayoutBounds="50,110,300,150"/>
+                </AbsoluteLayout>
+                <Grid Margin="20" RowSpacing="20" Padding="10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                </Grid>
+                <Label Text="Enter your Credentials To Delete" FontSize="20" TextColor="White" Grid.Row="0" FontAttributes="Bold"/>
+                <Entry x:Name="usernametoDelete" Placeholder="Enter username" FontSize="20" Grid.Row="1"/>
+                <Entry x:Name="passwordtoDelete" IsPassword="True" Placeholder="Enter password" FontSize="20" Grid.Row="2"/>
+                <Button x:Name="deleteButton" Text="Delete" TextColor="White" BackgroundColor="Blue" FontSize="16" Clicked="DeleteAccButton_Clicked" Grid.Row="3" CornerRadius="30" HorizontalOptions="Center"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

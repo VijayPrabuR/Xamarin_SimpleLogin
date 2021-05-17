@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RegLoginDemo.Views.LoginPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <AbsoluteLayout>
+                    <Image Source="loginlogo" HorizontalOptions="Center" AbsoluteLayout.LayoutBounds="50,110,300,150"/>
+                </AbsoluteLayout>
+                <Grid VerticalOptions="CenterAndExpand" Margin="20" RowSpacing="18" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <Entry x:Name="usernameVal" Placeholder="Enter your name" FontSize="20" Grid.Row="0" Grid.ColumnSpan="2"/>
+                    <Entry x:Name="passwordVal" IsPassword="True" Placeholder="Enter your Password" FontSize="20" Grid.Row="1" Grid.ColumnSpan="2"/>
+                    <Button Text="Login" TextColor="White" BackgroundColor="Blue" Grid.Row="2" Grid.Column="0" Clicked="LoginButton_Clicked" CornerRadius="30"/>
+                    <Button Text="SignUp" TextColor="Blue" BackgroundColor="White" Grid.Row="2" Grid.Column="1" Clicked="SignUpButton_Clicked" CornerRadius="30"/>
+                    <Button Text="Delete Account" TextColor="Blue" BackgroundColor="White" Grid.Row="3" Grid.Column="0" Clicked="DeleteButton_Clicked" CornerRadius="30"/>
+                    <Button Text="Reset Password" TextColor="Blue" BackgroundColor="White" Grid.Row="3" Grid.Column="1" Clicked="ResetButton_Clicked" CornerRadius="30"/>
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
